@@ -48,6 +48,8 @@ class _HomePageState extends State<HomePage> {
   List _posts = [];
 
   void _loadMore() async {
+    // log(_controller.position.toString());
+    log('_controller.position.pixels : ${_controller.position.pixels.toString()}');
     log('_controller.position.extentAfter : ${_controller.position.extentAfter}');
     if (_hasNextPage == true &&
         _isFirstLoadRunning == false &&
